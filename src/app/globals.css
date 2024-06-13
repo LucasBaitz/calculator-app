@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-one-button {
+  background-color: #eae3db;
+}
+
+.theme-one-button:hover {
+  background-color: white;
+}
+
+.theme-one-secondary-button {
+  background-color: #647299;
+}
+
+.theme-one-secondary-button:hover {
+  background-color: #a2b3e1;
+}
+
+.theme-one-secondary-button {
+  background-color: #647299;
+}
+
+.theme-one-equal-button {
+  background-color: #d13f30;
+}
+
+.theme-one-equal-button:hover {
+  background-color: #f96c5b;
+}
+
+.theme-two-button {
+  background-color: #e5e4e0;
+}
+
+.theme-two-button:hover {
+  background-color: white;
+}
+
+.theme-two-secondary-button {
+  background-color: #378286;
+}
+
+.theme-two-secondary-button:hover {
+  background-color: #a2b3e1;
+}
+
+.theme-two-equal-button {
+  background-color: #c85401;
+}
+
+.theme-two-equal-button:hover {
+  background-color: #ff8b38;
+}
+
+.theme-three-button {
+  background-color: #331b4d;
+}
+
+.theme-three-button:hover {
+  background-color: #6b34ac;
+}
+
+.theme-three-secondary-button {
+  background-color: #56077c;
+}
+
+.theme-three-secondary-button:hover {
+  background-color: #8631af;
+}
+
+.theme-three-equal-button {
+  background-color: #00decf;
+}
+
+.theme-three-equal-button:hover {
+  background-color: #94fff9;
+  color: black;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
