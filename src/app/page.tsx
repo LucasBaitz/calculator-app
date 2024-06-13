@@ -10,7 +10,7 @@ import { getThemePreference, saveThemePreference } from "@/lib/themeStorage";
 import { useEffect, useState } from "react";
 
 const Home: React.FC = () => {
-  const [theme, setTheme] = useState<Theme>(getThemePreference());
+  const [theme, setTheme] = useState<Theme>(defaultTheme);
 
   useEffect(() => {
     setTheme(getThemePreference())

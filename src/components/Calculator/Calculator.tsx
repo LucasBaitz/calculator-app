@@ -76,8 +76,6 @@ const Calculator: React.FC<CalculatorProps> = ({ theme }) => {
     rows.push(numbers.slice(i, i + 3));
   }
 
-  const reversedRows = rows.reverse();
-
   const buttons = [
     {
       value: "7",
@@ -260,6 +258,8 @@ const Calculator: React.FC<CalculatorProps> = ({ theme }) => {
       </div>
     </div>
   );
+
+  return <div></div>
 };
 
 export default Calculator;

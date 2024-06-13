@@ -1,3 +1,4 @@
+"use client";
 import { defaultTheme } from "@/components/Themes/themes";
 
 const themeStorageKey = "appTheme";
